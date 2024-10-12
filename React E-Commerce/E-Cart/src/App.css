@@ -1,0 +1,244 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #270858;
+    color: white;
+    padding: 20px;
+}
+
+div#root {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.brand {
+    font-weight: bolder;
+    width: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.search-bar {
+    width: 60%;
+}
+
+.search-bar input {
+    width: 55%;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input::placeholder {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav-icons {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-body button {
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.count {
+    background: red;
+    padding: 1px 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: -8px;
+}
+
+.nav-bar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #4b1b78;
+    color: white;
+    font-weight: bold;
+}
+
+.product_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (min-width: 480px) and (max-width:1200px) {}
+
+.card {
+    width: 20%;
+    border: 1px solid #d3d3d3;
+    margin: 20px 0px;
+    border-radius: 2px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+}
+
+.product-desc {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-body-btn {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdp_img {
+    width: 50%;
+}
+
+.pdp_para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px;
+    width: 50%;
+}
+
+.main_card {
+    display: flex;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.active {
+    color: rgb(70 105 157);
+}
+
+.btn_style {
+    position: relative;
+    background: rgb(108 144 197);
+    border-radius: 6px;
+    padding: 5px 10px;
+    width: auto;
+}
+
+
+/* Popup background */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    /* Ensure it sits on top */
+}
+
+
+/* Popup content */
+
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 450px;
+    max-width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+/* Popup heading */
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* Input and textarea styling */
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.popup-content input:focus,
+.popup-content textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    /* Blue border on focus */
+}
+
+
+/* Submit and cancel button styling */
+
+.popup-content button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+
+/* Cancel button styling */
+
+.popup-content button[type="button"] {
+    background-color: #ff4d4d;
+}
+
+.popup-content button[type="button"]:hover {
+    background-color: #e60000;
+    /* Darker red on hover */
+}
+
+
+/* Animation for the popup */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.add_product {
+    max-width: max-content;
+}
